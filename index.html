@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="АвтоЭстетика — детейлинг в Новотроицке. Адрес: Юргинский переулок, 5. Ежедневно, кроме воскресенья, с 10:00 до 18:00.">
+  <meta name="theme-color" content="#202321">
+  <title>АвтоЭстетика — детейлинг в Новотроицке</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="АвтоЭстетика — на главную">
+        <span class="brand-mark">АЭ</span>
+        <span class="brand-name">АвтоЭстетика<span>156</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#request">Оставить заявку</a>
+        <a href="#visit">Как нас найти</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header-phone" href="tel:+79228898699">+7 922 889-86-99</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Автомобиль после ухода и полировки"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span></span> Детейлинг в Новотроицке</p>
+        <h1>Забота о внешнем виде<br>вашего автомобиля</h1>
+        <p class="hero-copy">АвтоЭстетика — место, где вашему автомобилю уделят внимание. Расскажите, что хотите сделать, и мы обсудим детали.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#request">Оставить заявку <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="tel:+79228898699">Позвонить нам</a>
+        </div>
+        <div class="hero-note"><span class="hero-note-line"></span> Юргинский переулок, 5 <i>·</i> Новотроицк</div>
+        <div class="hero-side-note" aria-hidden="true">АВТОЭСТЕТИКА <span>156</span></div>
+      </div>
+    </section>
+
+    <section class="quick-info" aria-label="Краткая информация">
+      <div class="container quick-grid">
+        <div class="quick-item">
+          <span class="quick-label">Адрес</span>
+          <strong>Юргинский переулок, 5</strong>
+        </div>
+        <div class="quick-item">
+          <span class="quick-label">График работы</span>
+          <strong>Пн — Сб, 10:00–18:00</strong>
+        </div>
+        <div class="quick-item">
+          <span class="quick-label">Телефон</span>
+          <strong><a href="tel:+79228898699">+7 922 889-86-99</a></strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow eyebrow-dark">АвтоЭстетика</p>
+          <h2>Ваш автомобиль<br>заслуживает внимания</h2>
+        </div>
+        <div class="about-text">
+          <p>Мы занимаемся детейлингом в Новотроицке. Помогаем поддерживать аккуратный внешний вид автомобиля и подбирать уход под конкретные задачи.</p>
+          <p>У каждого автомобиля своё состояние и свои особенности. Позвоните нам — обсудим, что требуется именно вашей машине, и сориентируем по дальнейшим действиям.</p>
+          <a class="text-link" href="tel:+79228898699">Обсудить по телефону <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="request section" id="request">
+      <div class="container request-grid">
+        <div class="request-copy">
+          <p class="eyebrow eyebrow-dark">Запись и консультация</p>
+          <h2>Оставьте заявку</h2>
+          <p>Расскажите немного о себе и автомобиле. Мы свяжемся с вами, уточним задачу и обсудим удобное время.</p>
+          <div class="request-contact"><span class="request-contact-mark">i</span><span>Можно также позвонить напрямую:<br><a href="tel:+79228898699">+7 922 889-86-99</a></span></div>
+        </div>
+        <form class="request-form" id="requestForm">
+          <div class="form-heading"><strong>Форма заявки</strong></div>
+          <label class="form-field">
+            <span>Ваше имя <i>*</i></span>
+            <input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" required maxlength="60">
+          </label>
+          <label class="form-field">
+            <span>Номер телефона <i>*</i></span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required minlength="10" maxlength="25">
+          </label>
+          <label class="form-field">
+            <span>Что хотите сделать с автомобилем?</span>
+            <textarea name="message" rows="3" placeholder="Коротко опишите, что вас интересует" maxlength="500"></textarea>
+          </label>
+          <button class="button button-primary form-submit" type="submit">Отправить заявку <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-copy">
+          <p class="eyebrow eyebrow-dark">Ждём вас</p>
+          <h2>Приезжайте<br>к нам</h2>
+          <p class="visit-address">Новотроицк, Юргинский переулок, 5</p>
+          <div class="hours">
+            <div><span>Понедельник — суббота</span><strong>10:00–18:00</strong></div>
+            <div><span>Воскресенье</span><strong>Выходной</strong></div>
+          </div>
+          <a class="button button-dark" href="https://2gis.ru/novotroick/geo/70030076222825483" target="_blank" rel="noopener noreferrer">Построить маршрут</a>
+        </div>
+        <a class="map-card" href="https://2gis.ru/novotroick/geo/70030076222825483" target="_blank" rel="noopener noreferrer" aria-label="Открыть адрес в 2ГИС">
+          <div class="map-pattern" aria-hidden="true">
+            <span class="road road-one"></span>
+            <span class="road road-two"></span>
+            <span class="road road-three"></span>
+            <span class="map-pin"><i></i></span>
+          </div>
+          <span class="map-caption"><strong>АвтоЭстетика</strong><small>Юргинский переулок, 5 · Открыть в 2ГИС ↗</small></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacts">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow">Есть вопросы?</p>
+          <h2>Свяжитесь<br>с нами</h2>
+          <p class="contact-copy">Позвоните или напишите в нашу группу ВКонтакте. Подскажем по услугам и договоримся о визите.</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-phone" href="tel:+79228898699">+7 922 889-86-99 <span>↗</span></a>
+          <a class="contact-social" href="https://vk.ru/autoestetik156" target="_blank" rel="noopener noreferrer">Группа ВКонтакте <span>↗</span></a>
+          <a class="contact-social" href="https://2gis.ru/firm/70000001116283872" target="_blank" rel="noopener noreferrer">Мы на 2ГИС <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand brand-footer" href="#top">
+        <span class="brand-mark">АЭ</span>
+        <span class="brand-name">АвтоЭстетика<span>156</span></span>
+      </a>
+      <p>Детейлинг в Новотроицке</p>
+      <span class="copyright">© АвтоЭстетика</span>
+    </div>
+  </footer>
+  <script>
+    const requestForm = document.getElementById('requestForm');
+    const formStatus = document.getElementById('formStatus');
+
+    requestForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!requestForm.reportValidity()) return;
+
+      const formData = new FormData(requestForm);
+      const name = String(formData.get('name') || '').trim();
+      const phone = String(formData.get('phone') || '').trim();
+      const message = String(formData.get('message') || '').trim();
+      const text = [
+        'Здравствуйте! Хочу оставить заявку в АвтоЭстетика.',
+        `Имя: ${name}`,
+        `Телефон: ${phone}`,
+        message ? `Что интересует: ${message}` : ''
+      ].filter(Boolean).join('\n');
+
+      const whatsappUrl = `https://wa.me/79228898699?text=${encodeURIComponent(text)}`;
+      const whatsappWindow = window.open(whatsappUrl, '_blank');
+      if (whatsappWindow) whatsappWindow.opener = null;
+      if (!whatsappWindow) {
+        formStatus.textContent = 'Браузер заблокировал новое окно. Разрешите всплывающие окна или позвоните нам по номеру +7 922 889-86-99.';
+      } else {
+        formStatus.textContent = 'WhatsApp открыт. Проверьте сообщение и нажмите «Отправить».';
+      }
+    });
+
+    const animatedItems = document.querySelectorAll('.hero-content, .quick-item, .about-grid, .request-copy, .request-form, .visit-copy, .map-card, .contact-inner');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      animatedItems.forEach((item) => {
+        item.classList.add('reveal');
+        revealObserver.observe(item);
+      });
+    }
+  </script>
+</body>
+</html>
